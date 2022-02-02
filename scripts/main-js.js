@@ -10,7 +10,7 @@ input.addEventListener('keydown', ({key})=>{
     if(key === 'Enter'){
         // length == limit of the tasks
         if(list.getElementsByTagName('div').length == 8){
-            alert('limit listy został uzyskany')
+            alert('The list limit has been reached')
             input.value = '';
         }else{
             if(input.value !== ''){
@@ -34,7 +34,7 @@ input.addEventListener('keydown', ({key})=>{
                 })
 
             }else{
-                alert('pole jest puste!')
+                alert('input field is empty!')
             }
         } 
     }
